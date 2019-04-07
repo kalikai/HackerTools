@@ -6,7 +6,7 @@
 //************************************************************
 // 函数名称: CMyTaskSchedule 
 // 函数说明: 初始化计划任务
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: void
 // 返 回 值: void
@@ -64,7 +64,7 @@ CMyTaskSchedule::~CMyTaskSchedule()
 //************************************************************
 // 函数名称: NewTask 
 // 函数说明: 创建计划任务
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char* lpszTaskName    计划任务名
 // 参	 数: char* lpszProgramPath 计划任务路径
@@ -214,7 +214,7 @@ BOOL CMyTaskSchedule::NewTask(char* lpszTaskName, char* lpszProgramPath, char* l
 //************************************************************
 // 函数名称: Delete 
 // 函数说明: 删除计划任务
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char * lpszTaskName 计划任务名
 // 返 回 值: BOOL是否成功
@@ -241,7 +241,7 @@ BOOL CMyTaskSchedule::Delete(char * lpszTaskName)
 //************************************************************
 // 函数名称: IsTaskValid 
 // 函数说明: 判断指定计划任务是否还在
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char * lpszTaskName 计划任务名
 // 返 回 值: BOOL是否成功
@@ -272,7 +272,7 @@ BOOL CMyTaskSchedule::IsTaskValid(char * lpszTaskName)
 //************************************************************
 // 函数名称: Run 
 // 函数说明: 运行指定任务计划
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char * lpszTaskName 计划任务名  char * lpszParam参数
 // 返 回 值: BOOL是否成功
@@ -312,7 +312,7 @@ BOOL CMyTaskSchedule::Run(char * lpszTaskName, char * lpszParam)
 //************************************************************
 // 函数名称: IsEnable 
 // 函数说明: 判断指定任务计划是否启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char * lpszTaskName 计划任务名
 // 返 回 值: BOOL是否成功
@@ -349,7 +349,7 @@ BOOL CMyTaskSchedule::IsEnable(char * lpszTaskName)
 //************************************************************
 // 函数名称: SetEnable 
 // 函数说明: 设置指定任务计划是否启动还是禁用
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/22
 // 参	 数: char * lpszTaskName 计划任务名 bEnable是否启动
 // 返 回 值: BOOL是否成功

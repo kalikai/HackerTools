@@ -51,7 +51,7 @@ END_MESSAGE_MAP()
 //************************************************************
 // 函数名称: OnBnClickedBase
 // 函数说明: 基础技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -68,7 +68,7 @@ void CDia_User::OnBnClickedBase()
 //************************************************************
 // 函数名称: OnBnClickedInject
 // 函数说明: 注入技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -85,7 +85,7 @@ void CDia_User::OnBnClickedInject()
 //************************************************************
 // 函数名称: OnBnClickedStart
 // 函数说明: 启动技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/19
 // 参	 数: void
 // 返 回 值: void
@@ -102,7 +102,7 @@ void CDia_User::OnBnClickedStart()
 //************************************************************
 // 函数名称: OnBnClickedSelfstart
 // 函数说明: 自启动技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/19
 // 参	 数: void
 // 返 回 值: void
@@ -119,7 +119,7 @@ void CDia_User::OnBnClickedSelfstart()
 //************************************************************
 // 函数名称: OnBnClickedPrivilege
 // 函数说明: 提权技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -135,7 +135,7 @@ void CDia_User::OnBnClickedPrivilege()
 //************************************************************
 // 函数名称: OnBnClickedHide
 // 函数说明: 隐藏技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -152,7 +152,7 @@ void CDia_User::OnBnClickedHide()
 //************************************************************
 // 函数名称: OnBnClickedCompress
 // 函数说明: 压缩技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: void
 // 返 回 值: void
@@ -168,7 +168,7 @@ void CDia_User::OnBnClickedCompress()
 //************************************************************
 // 函数名称: OnBnClickedEncrypt
 // 函数说明: 加密技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: void
 // 返 回 值: void
@@ -184,7 +184,7 @@ void CDia_User::OnBnClickedEncrypt()
 //************************************************************
 // 函数名称: OnBnClickedOther
 // 函数说明: 功能技术按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void

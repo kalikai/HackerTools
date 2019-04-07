@@ -58,7 +58,7 @@ BOOL CHide::OnInitDialog()
 //************************************************************
 // 函数名称: OnDropFiles
 // 函数说明: 响应文件拖拽消息
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: HDROP hDropInfo 文件句柄
 // 返 回 值: void
@@ -84,7 +84,7 @@ void CHide::OnDropFiles(HDROP hDropInfo)
 //************************************************************
 // 函数名称: DisguiseProcess
 // 函数说明: 修改本进程的PEB中的路径和命令行信息 实现进程伪装
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: const wchar_t * lpwszPath 伪装的文件路径  
 // 参	 数: const wchar_t * lpwszCmd伪装的文件名
@@ -148,7 +148,7 @@ BOOL CHide::DisguiseProcess(const wchar_t * lpwszPath, const wchar_t * lpwszCmd)
 //************************************************************
 // 函数名称: OnBnClickedPretend
 // 函数说明: 进程伪装按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -183,7 +183,7 @@ void CHide::OnBnClickedPretend()
 //************************************************************
 // 函数名称: IsSystem32
 // 函数说明: 判断当前系统是否是32位
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: BOOL 是32位返回TRUE 不是返回FALSE
@@ -212,7 +212,7 @@ BOOL CHide::IsSystem32()
 //************************************************************
 // 函数名称: OnBnClickedPuppet
 // 函数说明: 傀儡进程按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: void
 // 返 回 值: void
@@ -356,7 +356,7 @@ BOOL CHide::ReplaceProcess(const wchar_t * pszFilePath, PVOID pReplaceData, DWOR
 //************************************************************
 // 函数名称: OnBnClickedHijack
 // 函数说明: DLL劫持按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: void
 // 返 回 值: void

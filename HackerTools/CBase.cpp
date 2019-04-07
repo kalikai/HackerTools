@@ -43,7 +43,7 @@ END_MESSAGE_MAP()
 //************************************************************
 // 函数名称: OnBnClickedRunsingle
 // 函数说明: 防双开按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -57,7 +57,7 @@ void CBase::OnBnClickedRunsingle()
 //************************************************************
 // 函数名称: OnBnClickedReleaseres
 // 函数说明: 释放资源按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -65,8 +65,8 @@ void CBase::OnBnClickedRunsingle()
 void CBase::OnBnClickedReleaseres()
 {
 	//获取指定模块的资源
-	HRSRC hRsrc1 = FindResource(NULL, MAKEINTRESOURCE(IDR_GUISHOU1), TEXT("GUISHOU"));
-	HRSRC hRsrc2 = FindResource(NULL, MAKEINTRESOURCE(IDR_GUISHOU2), TEXT("GUISHOU"));
+	HRSRC hRsrc1 = FindResource(NULL, MAKEINTRESOURCE(IDR_kalikai1), TEXT("kalikai"));
+	HRSRC hRsrc2 = FindResource(NULL, MAKEINTRESOURCE(IDR_kalikai2), TEXT("kalikai"));
 
 	if (hRsrc1==NULL|| hRsrc2==NULL)
 	{

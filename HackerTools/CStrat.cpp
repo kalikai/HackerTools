@@ -58,7 +58,7 @@ BOOL CStrat::OnInitDialog()
 //************************************************************
 // 函数名称: OnBnClickedInject
 // 函数说明: 三种方式创建进程
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/19
 // 参	 数: void
 // 返 回 值: void
@@ -133,7 +133,7 @@ void CStrat::OnBnClickedCreateprocess()
 //************************************************************
 // 函数名称: OnBnClickedMemloaddll
 // 函数说明: 内存加载DLL
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/19
 // 参	 数: void
 // 返 回 值: void
@@ -183,7 +183,7 @@ void CStrat::OnBnClickedMemloaddll()
 //************************************************************
 // 函数名称: OnDropFiles 
 // 函数说明: 响应拖拽文件按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/19
 // 参	 数: HDROP hDropInfo 拖拽文件句柄
 // 返 回 值: void
@@ -209,7 +209,7 @@ void CStrat::OnDropFiles(HDROP hDropInfo)
 //************************************************************
 // 函数名称: WinExecStart 
 // 函数说明: 以WinExec的方式启动进程
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: char* pszPath,文件路径 UINT icmdshow 显示方式
 // 返 回 值: BOOL是否成功
@@ -230,7 +230,7 @@ BOOL CStrat::WinExecStart(char* pszPath, UINT icmdshow)
 //************************************************************
 // 函数名称: ShellExecuteStart 
 // 函数说明: 以ShellExecute的方式启动进程
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: char* pszPath,文件路径 UINT icmdshow 显示方式
 // 返 回 值: BOOL是否成功
@@ -251,7 +251,7 @@ BOOL CStrat::ShellExecuteStart(CString pszPath, UINT icmdshow)
 //************************************************************
 // 函数名称: CreateProcessStart 
 // 函数说明: 以CreateProcess的方式启动进程
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: char* pszPath,文件路径 UINT icmdshow 显示方式
 // 返 回 值: BOOL是否成功
@@ -284,7 +284,7 @@ BOOL CStrat::CreateProcessStart(char* pszPath, UINT icmdshow)
 //************************************************************
 // 函数名称: MmRunDll 
 // 函数说明: 在内存中运行dll
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: CString path,文件路径 
 // 返 回 值: BOOL 是否成功
@@ -357,7 +357,7 @@ BOOL CStrat::MmRunDll(CString path)
 //************************************************************
 // 函数名称: MmLoadLibrary 
 // 函数说明: 将内存中的DLL按照内存对齐的方式加载到程序中
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpData内存中的DLL基址 , DWORD dwSize DLL文件大小
 // 返 回 值: LPVOID 加载成功后的DLL基址
@@ -429,7 +429,7 @@ LPVOID CStrat::MmLoadLibrary(LPVOID lpData, DWORD dwSize)
 //************************************************************
 // 函数名称: GetSizeOfImage 
 // 函数说明: 获取内存中的映像大小
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpData内存中的DLL基址 
 // 返 回 值: DWORD PE文件结构中IMAGE_NT_HEADERS.OptionalHeader.SizeOfImage值的大小
@@ -448,7 +448,7 @@ DWORD CStrat::GetSizeOfImage(LPVOID lpData)
 //************************************************************
 // 函数名称: MmMapFile 
 // 函数说明: 将内存DLL数据按SectionAlignment大小对齐映射到进程内存中
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpData 内存DLL文件数据的基址, 
 // LPVOID lpBaseAddress 内存DLL数据按SectionAlignment大小对齐映射到进程内存中的内存基址 
@@ -497,7 +497,7 @@ BOOL CStrat::MmMapFile(LPVOID lpData, LPVOID lpBaseAddress)
 //************************************************************
 // 函数名称: FixRelocationTable 
 // 函数说明: 修复重定位
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL数据按SectionAlignment大小对齐映射到进程内存中的内存基址 
 // 返 回 值: BOOL 是否成功
@@ -559,7 +559,7 @@ BOOL CStrat::FixRelocationTable(LPVOID lpBaseAddress)
 //************************************************************
 // 函数名称: FixImportTable 
 // 函数说明: 修复导入表
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL数据按SectionAlignment大小对齐映射到进程内存中的内存基址 
 // 返 回 值: BOOL 是否成功
@@ -640,7 +640,7 @@ BOOL CStrat::FixImportTable(LPVOID lpBaseAddress)
 //************************************************************
 // 函数名称: SetImageBase 
 // 函数说明: 修改PE文件的映像基址
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL数据按SectionAlignment大小对齐映射到进程内存中的内存基址 
 // 返 回 值: BOOL 是否成功
@@ -658,7 +658,7 @@ BOOL CStrat::SetImageBase(LPVOID lpBaseAddress)
 //************************************************************
 // 函数名称: CallDllMain 
 // 函数说明: 调用DLL的入口函数DllMain
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL数据按SectionAlignment大小对齐映射到进程内存中的内存基址 
 // 返 回 值: BOOL 是否成功
@@ -686,7 +686,7 @@ BOOL CStrat::CallDllMain(LPVOID lpBaseAddress)
 //************************************************************
 // 函数名称: MmGetProcAddress 
 // 函数说明: 模拟GetProcAddress获取内存DLL的导出函数
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL文件加载到进程中的加载基址, PCHAR lpszFuncName 导出函数的名字
 // 返 回 值: LPVOID 返回导出函数的的地址
@@ -727,7 +727,7 @@ LPVOID CStrat::MmGetProcAddress(LPVOID lpBaseAddress, PCHAR lpszFuncName)
 //************************************************************
 // 函数名称: MmFreeLibrary 
 // 函数说明: 释放从内存加载的DLL到进程内存的空间
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/20
 // 参	 数: LPVOID lpBaseAddress 内存DLL文件加载到进程中的加载基址
 // 返 回 值: BOOL是否成功

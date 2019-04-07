@@ -61,7 +61,7 @@ BOOL CSelfStart::OnInitDialog()
 //************************************************************
 // 函数名称: OnDropFiles 
 // 函数说明: 响应拖拽文件按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: HDROP hDropInfo 拖拽文件句柄
 // 返 回 值: void
@@ -95,7 +95,7 @@ void CSelfStart::OnDropFiles(HDROP hDropInfo)
 //************************************************************
 // 函数名称: OnBnClickedRegedit 
 // 函数说明: 注册表实现自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: void
 // 返 回 值: void
@@ -114,7 +114,7 @@ void CSelfStart::OnBnClickedRegedit()
 
 	//修改注册表
 	USES_CONVERSION;
-	if (SetRegAutoRun(W2A(m_Path), "GuiShou"))
+	if (SetRegAutoRun(W2A(m_Path), "kalikai"))
 	{
 		m_Tips += "已将目标程序设置到以下注册表项!\r\n";
 		m_Tips += "\\HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows-\r\n";
@@ -134,7 +134,7 @@ void CSelfStart::OnBnClickedRegedit()
 //************************************************************
 // 函数名称: OnBnClickedStartdir 
 // 函数说明: 快速启动目录实现自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: void
 // 返 回 值: void
@@ -171,7 +171,7 @@ void CSelfStart::OnBnClickedStartdir()
 //************************************************************
 // 函数名称: OnBnClickedTask 
 // 函数说明: 计划任务实现自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: void
 // 返 回 值: void
@@ -192,7 +192,7 @@ void CSelfStart::OnBnClickedTask()
 	//创建计划任务
 	CMyTaskSchedule task;
 	USES_CONVERSION;
-	bRet = task.NewTask("GuiShou", W2A(m_Path), "", "GuiShou");
+	bRet = task.NewTask("kalikai", W2A(m_Path), "", "kalikai");
 	if (FALSE == bRet)
 	{
 		m_Tips += "Create Task Schedule Error!\r\n";
@@ -211,7 +211,7 @@ void CSelfStart::OnBnClickedTask()
 //************************************************************
 // 函数名称: OnBnClickedService 
 // 函数说明: 系统服务实现自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: void
 // 返 回 值: void
@@ -261,7 +261,7 @@ void CSelfStart::OnBnClickedService()
 //************************************************************
 // 函数名称: SystemServiceOperate 
 // 函数说明: 服务操作函数
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: void
 // 返 回 值: void
@@ -367,7 +367,7 @@ BOOL CSelfStart::SystemServiceOperate(char* csPath, int iOperateType)
 //************************************************************
 // 函数名称: SetRegAutoRun 
 // 函数说明: 设置注册表使程序自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: lpszFileName 需要设置自启动的文件路径 
 //			 lpszValueName 设置的注册表启动项名
@@ -401,7 +401,7 @@ BOOL CSelfStart::SetRegAutoRun(const char* lpszFileName, const char* lpszValueNa
 //************************************************************
 // 函数名称: FastStartDirectory 
 // 函数说明: 使用快速启动目录使程序自启动
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/21
 // 参	 数: lpszSrcFilePath  源程序路径
 //			 lpszDestFileName 快速启动目录路径

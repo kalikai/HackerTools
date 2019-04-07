@@ -39,7 +39,7 @@ END_MESSAGE_MAP()
 //************************************************************
 // 函数名称: OnBnClickedShowcmd
 // 函数说明: 获取CMD的执行结果
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: TCHAR * pszCmd,cmd命令 TCHAR * pszResultBuffer接收CMD结果的缓冲区 DWORD dwResultBufferSize 缓冲区大小
 // 返 回 值: BOOL
@@ -98,7 +98,7 @@ BOOL CCmdResult::PipeCmd(char* pszCmd, char * pszResultBuffer, DWORD dwResultBuf
 //************************************************************
 // 函数名称: OnBnClickedShowcmd
 // 函数说明: 响应执行并获取CMD结果按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void

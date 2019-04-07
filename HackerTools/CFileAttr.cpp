@@ -64,7 +64,7 @@ BOOL CFileAttr::OnInitDialog()
 //************************************************************
 // 函数名称: CheckFileAttr
 // 函数说明: 查看文件属性
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void

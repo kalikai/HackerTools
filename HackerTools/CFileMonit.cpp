@@ -67,7 +67,7 @@ BOOL CFileMonit::OnInitDialog()
 //************************************************************
 // 函数名称: MonitorFileThreadProc
 // 函数说明: 监控文件的线程回调函数
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: lpVoid 要监控的文件路径
 // 返 回 值: void
@@ -169,7 +169,7 @@ UINT MonitorFileThreadProc(LPVOID lpVoid)
 //************************************************************
 // 函数名称: MonitorFiles
 // 函数说明: 使用多线程监控文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: char* pszDirectory 要监控的文件路径
 // 返 回 值: void

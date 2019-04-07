@@ -63,7 +63,7 @@ BOOL CEnumFiles::OnInitDialog()
 //************************************************************
 // 函数名称: InitCombox
 // 函数说明: 初始化Combox
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void
@@ -91,7 +91,7 @@ void CEnumFiles::InitCombox()
 //************************************************************
 // 函数名称: InitListCtrl
 // 函数说明: 初始化ListCtrl
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void
@@ -118,7 +118,7 @@ void CEnumFiles::InitListCtrl()
 //************************************************************
 // 函数名称: EnumFiles
 // 函数说明: 遍历文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: LPCTSTR FullPath 需要遍历文件的完整路径
 // 返 回 值: BOOL 是否成功
@@ -221,7 +221,7 @@ BOOL CEnumFiles::EnumFiles(LPCTSTR FullPath)
 //************************************************************
 // 函数名称: UpdateDir
 // 函数说明: 更新目录
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: LPCTSTR FullPath 文件完整路径
 // 返 回 值: void
@@ -240,7 +240,7 @@ void CEnumFiles::UpdateDir(LPCTSTR FullPath)
 //************************************************************
 // 函数名称: OnCbnSelchangeCombo1
 // 函数说明: 响应切换下拉框消息(选中复选框 右键添加事件处理程序)
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void
@@ -259,7 +259,7 @@ void CEnumFiles::OnCbnSelchangeCombo1()
 //************************************************************
 // 函数名称: OnBnClickedCheckdisk
 // 函数说明: 查看按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -279,7 +279,7 @@ void CEnumFiles::OnBnClickedCheckdisk()
 //************************************************************
 // 函数名称: OnNMRClickList2
 // 函数说明: 响应List控件的右键消息
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: NMHDR *pNMHDR, LRESULT *pResult
 // 返 回 值: void
@@ -303,7 +303,7 @@ void CEnumFiles::OnNMRClickList2(NMHDR *pNMHDR, LRESULT *pResult)
 //************************************************************
 // 函数名称: OnPopFileAttr
 // 函数说明: 响应属性菜单的点击
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -327,7 +327,7 @@ void CEnumFiles::OnPopFileAttr()
 //************************************************************
 // 函数名称: OnLvnItemActivateList2
 // 函数说明: 响应List控件的双击消息
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: NMHDR *pNMHDR, LRESULT *pResult
 // 返 回 值: void

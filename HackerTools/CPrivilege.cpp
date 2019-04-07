@@ -64,7 +64,7 @@ BOOL CPrivilege::OnInitDialog()
 //************************************************************
 // 函数名称: OnBnClickedDebug
 // 函数说明: 提升为Debug权限按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -88,7 +88,7 @@ void CPrivilege::OnBnClickedDebug()
 //************************************************************
 // 函数名称: OnBnClickedPassuac
 // 函数说明: BypassUAC按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -117,7 +117,7 @@ void CPrivilege::OnBnClickedPassuac()
 //************************************************************
 // 函数名称: EnablePrivileges
 // 函数说明: 提升当前令牌权限
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: const wchar_t * pszPrivilegesName 需要提升的权限名
 // 返 回 值: void
@@ -182,7 +182,7 @@ BOOL CPrivilege::EnablePrivileges(const wchar_t* pszPrivilegesName)
 //************************************************************
 // 函数名称: OnBnClickedCheckprivilege
 // 函数说明: 查看当前进程权限按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void
@@ -204,7 +204,7 @@ void CPrivilege::OnBnClickedCheckprivilege()
 //************************************************************
 // 函数名称: FindAllPrivileges
 // 函数说明: 遍历当前进程权限
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/23
 // 参	 数: void
 // 返 回 值: void

@@ -64,7 +64,7 @@ BOOL CInject::OnInitDialog()
 //************************************************************
 // 函数名称: OnBnClickedRadio1
 // 函数说明: 响应单选框按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -95,7 +95,7 @@ void CInject::OnBnClickedRadio1()
 	case 2:
 	{
 		m_Edit = L"请拖入TestDll.dll";
-		//m_Edit = L"C:\\Users\\GuiShou\\Desktop\\TestDll.dll";
+		//m_Edit = L"C:\\Users\\kalikai\\Desktop\\TestDll.dll";
 		m_PidAndName = L"请输入需要注入的进程名";
 		//m_PidAndName = L"QQ.exe";
 		GetDlgItem(IDC_EDIT2)->ShowWindow(TRUE);
@@ -115,7 +115,7 @@ void CInject::OnBnClickedRadio1()
 //************************************************************
 // 函数名称: OnDropFiles 
 // 函数说明: 响应拖拽文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: HDROP hDropInfo 拖拽文件句柄
 // 返 回 值: void
@@ -147,7 +147,7 @@ void CInject::OnDropFiles(HDROP hDropInfo)
 //************************************************************
 // 函数名称: OnBnClickedInject 
 // 函数说明: 响应开始注入按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: HDROP hDropInfo 拖拽文件句柄
 // 返 回 值: void
@@ -268,7 +268,7 @@ void CInject::OnBnClickedInject()
 //************************************************************
 // 函数名称: SetGlobalHook 
 // 函数说明: 设置全局钩子
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -322,7 +322,7 @@ void CInject::SetGlobalHook()
 //************************************************************
 // 函数名称: ZwCreateThreadExInjectDll 
 // 函数说明: 使用ZwCreateThreadEx 实现远线程注入
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/19
 // 参	 数: dwProcessId 线程ID  pszDllFileName dll路径名
 // 返 回 值: BOOL 是否成功
@@ -459,7 +459,7 @@ BOOL CInject::ZwCreateThreadExInjectDll(DWORD dwProcessId, char* pszDllFileName)
 //************************************************************
 // 函数名称: EnableDebugPrivilege 
 // 函数说明: 提升为调试权限
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/19
 // 参	 数: fEnable是否提权
 // 返 回 值: BOOL 是否成功
@@ -489,7 +489,7 @@ BOOL CInject::EnableDebugPrivilege(BOOL fEnable)
 //************************************************************
 // 函数名称: APCInject 
 // 函数说明: 使用APC注入DLL到目标进程
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/19
 // 参	 数: pszProcessName 进程名 pszDllName DLL路径名
 // 返 回 值: BOOL 是否成功
@@ -621,7 +621,7 @@ BOOL CInject::APCInject(char *pszProcessName, char *pszDllName)
 //************************************************************
 // 函数名称: GetAllTidByPid 
 // 函数说明: 根据进程ID获取所有线程ID
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/19
 // 参	 数: dwProcessId 进程ID  ppThreadId 线程ID  pdwThreadIdLength 线程ID个数
 // 返 回 值: BOOL 是否成功
@@ -701,7 +701,7 @@ BOOL CInject::GetAllTidByPid(DWORD dwProcessId, DWORD** ppThreadId, DWORD* pdwTh
 //************************************************************
 // 函数名称: GetPidByPname 
 // 函数说明: 根据进程名获取进程ID
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/19
 // 参	 数: pszProcessName 进程名 
 // 返 回 值: DWORD 进程ID

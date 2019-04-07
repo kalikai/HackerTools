@@ -128,7 +128,15 @@ BOOL CHackerToolsDlg::OnInitDialog()
 	m_MyTable.m_Dia[1]->ShowWindow(SW_HIDE);
 	
 	//开启防双开
-	HANDLE hMutex = CreateMutexA(NULL, FALSE, "GuiShou");
+	//************************************************************
+	// 函数名称: CreateMutexA
+	// 函数说明: 创建互斥体
+	// 作	 者: kalikai
+	// 时	 间: 2018/12/18
+	// 参	 数: void
+	// 返 回 值: void
+	//************************************************************
+	HANDLE hMutex = CreateMutexA(NULL, FALSE, "kalikaikai");
 	if (hMutex)
 	{
 		if (GetLastError() == ERROR_ALREADY_EXISTS)
@@ -193,7 +201,7 @@ HCURSOR CHackerToolsDlg::OnQueryDragIcon()
 //************************************************************
 // 函数名称: OnHelp
 // 函数说明: 菜单帮助按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
@@ -209,12 +217,12 @@ void CHackerToolsDlg::OnHelp()
 //************************************************************
 // 函数名称: OnHelp
 // 函数说明: 菜单说明按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2018/12/18
 // 参	 数: void
 // 返 回 值: void
 //************************************************************
 void CHackerToolsDlg::OnIntroductions()
 {
-	MessageBox(L"Create By GuiShou");
+	MessageBox(L"Create By kalikai");
 }

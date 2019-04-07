@@ -75,7 +75,7 @@ BOOL CEncrypt::OnInitDialog()
 //************************************************************
 // 函数名称: OnBnClickedHash
 // 函数说明: HASH按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: void
 // 返 回 值: void
@@ -130,7 +130,7 @@ void CEncrypt::OnBnClickedHash()
 //************************************************************
 // 函数名称: GetFileData
 // 函数说明: 获取文件数据
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: char * pszFilePath 文件路径 BYTE** pFileData 文件数据首地址
 // 参	 数: DWORD * pdwFileDataLength 文件数据长度
@@ -187,7 +187,7 @@ BOOL CEncrypt::GetFileData(char * pszFilePath, BYTE** ppFileData, DWORD * pdwFil
 //************************************************************
 // 函数名称: CalcHash
 // 函数说明: 计算哈希值
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE * pData,需要计算哈希值的数据  DWORD dwDataLength ,需要计算哈希值的数据长度
 // 参	 数: ALG_ID algHashType 需要计算哈希值的类型 BYTE** ppHashData,计算出来的哈希数据  
@@ -286,7 +286,7 @@ BOOL CEncrypt::CalcHash(BYTE* pData, DWORD dwDataLength, ALG_ID algHashType, BYT
 //************************************************************
 // 函数名称: ByteToCString
 // 函数说明: 把BYTE* 转为十六进制显示的CString
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE * str需要转换的BYTE* DWORD dwLength 长度
 //************************************************************
@@ -314,7 +314,7 @@ CString CEncrypt::ByteToCString(BYTE * str, DWORD dwLength)
 //************************************************************
 // 函数名称: OnBnClickedAes
 // 函数说明: AES加解密按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: void
 // 返 回 值: void
@@ -340,7 +340,7 @@ void CEncrypt::OnBnClickedAes()
 	m_Data += "\r\n";
 
 	//AES加密
-	AesEncrypt((BYTE*)"GuiShou", 6, pData, dwDataLength, dwBufferLength);
+	AesEncrypt((BYTE*)"kalikai", 6, pData, dwDataLength, dwBufferLength);
 	//显示加密的数据
 	temp = ByteToCString(pData, dwDataLength);
 	m_Data += "AES加密后的数据为:\r\n";
@@ -348,7 +348,7 @@ void CEncrypt::OnBnClickedAes()
 	m_Data += "\r\n";
 
 	//AES解密
-	AesDecrypt((BYTE*)"GuiShou", 6, pData, dwDataLength, dwBufferLength);
+	AesDecrypt((BYTE*)"kalikai", 6, pData, dwDataLength, dwBufferLength);
 	//显示解密的数据
 	temp = ByteToCString(pData, dwDataLength);
 	m_Data += "AES解密后的数据为:\r\n";
@@ -363,7 +363,7 @@ void CEncrypt::OnBnClickedAes()
 //************************************************************
 // 函数名称: AesEncrypt
 // 函数说明: AES加密
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE * pPassword 密钥 DWORD dwPasswordLength 密钥长度
 // 参	 数: BYTE* pData 需要AES加密的数据 DWORD& dwDataLength 需要AES加密的数据长度
@@ -440,7 +440,7 @@ BOOL CEncrypt::AesEncrypt(BYTE * pPassword, DWORD dwPasswordLength, BYTE * pData
 //************************************************************
 // 函数名称: AesDecrypt
 // 函数说明: AES解密
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE * pPassword 密钥 DWORD dwPasswordLength 密钥长度
 // 参	 数: BYTE* pData 需要AES加密的数据 DWORD& dwDataLength 需要AES加密的数据长度
@@ -517,7 +517,7 @@ BOOL CEncrypt::AesDecrypt(BYTE * pPassword, DWORD dwPasswordLength, BYTE * pData
 //************************************************************
 // 函数名称: OnBnClickedRsa
 // 函数说明: RSA加解密按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: void
 // 返 回 值: void
@@ -592,7 +592,7 @@ void CEncrypt::OnBnClickedRsa()
 //************************************************************
 // 函数名称: GenerateKey
 // 函数说明: 生成公钥和私钥
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE** ppPublicKey 公钥 DWORD* pdwPublicKeyLength 公钥长度
 // 参	 数: BYTE** ppPrivateKey 私钥 DWORD* pdwPrivateKeyLength 私钥长度
@@ -684,7 +684,7 @@ BOOL CEncrypt::GenerateKey(BYTE** ppPublicKey, DWORD* pdwPublicKeyLength, BYTE**
 //************************************************************
 // 函数名称: RsaEncrypt
 // 函数说明: RAS加密
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE* pPublicKey,公钥 DWORD dwPublicKeyLength 公钥长度
 // 参	 数: BYTE* pData 需要加密的数据 DWORD& dwDataLength 需要加密的数据长度 
@@ -741,7 +741,7 @@ BOOL CEncrypt::RsaEncrypt(BYTE* pPublicKey, DWORD dwPublicKeyLength, BYTE* pData
 //************************************************************
 // 函数名称: RsaDecrypt
 // 函数说明: RAS解密
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE* pPrivateKey 私钥 DWORD dwPrivateKeyLength 私钥长度
 // 参	 数: BYTE* pData 需要解密的数据 DWORD& dwDataLength 需要解密的数据长度 

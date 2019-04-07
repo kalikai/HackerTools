@@ -51,7 +51,7 @@ END_MESSAGE_MAP()
 //************************************************************
 // 函数名称: OnBnClickedEnumprocess
 // 函数说明: 进程遍历按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void
@@ -67,7 +67,7 @@ void CFunction::OnBnClickedEnumprocess()
 //************************************************************
 // 函数名称: OnBnClickedEnumfiles
 // 函数说明: 文件遍历按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: void
@@ -83,7 +83,7 @@ void CFunction::OnBnClickedEnumfiles()
 //************************************************************
 // 函数名称: OnBnClickedScreenshot
 // 函数说明: 桌面截屏按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -105,7 +105,7 @@ void CFunction::OnBnClickedScreenshot()
 //************************************************************
 // 函数名称: ScreenCapture
 // 函数说明: 捕获桌面屏幕
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: BOOL 是否成功
@@ -149,7 +149,7 @@ BOOL CFunction::ScreenCapture()
 //************************************************************
 // 函数名称: PaintMouse
 // 函数说明: 绘制鼠标
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: HDC hdc 设备环境句柄
 // 返 回 值: BOOL 是否成功
@@ -189,7 +189,7 @@ BOOL CFunction::PaintMouse(HDC hdc)
 //************************************************************
 // 函数名称: SaveBmp
 // 函数说明: 保存为图片
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: HBITMAP hBmp 
 // 返 回 值: BOOL 是否成功
@@ -212,7 +212,7 @@ BOOL CFunction::SaveBmp(HBITMAP hBmp)
 //************************************************************
 // 函数名称: GetKey
 // 函数说明: 判断键盘按下什么键
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/31
 // 参	 数: int Key
 // 返 回 值: string
@@ -527,7 +527,7 @@ string GetKey(int Key)
 //************************************************************
 // 函数名称: KeyRecordProc
 // 函数说明: 按键记录线程回调函数
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -562,7 +562,7 @@ UINT KeyRecordProc(LPVOID lpVoid)
 //************************************************************
 // 函数名称: OnBnClickedKeyrecord
 // 函数说明: 按键记录按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -580,7 +580,7 @@ void CFunction::OnBnClickedKeyrecord()
 //************************************************************
 // 函数名称: OnBnClickedShowcmd
 // 函数说明: 获取CMD的执行结果
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: BOOL
@@ -596,7 +596,7 @@ void CFunction::OnBnClickedShowcmd()
 //************************************************************
 // 函数名称: OnDeviceChange
 // 函数说明: 响应WM_DeviceChange消息监控U盘
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: WPARAM wParam, LPARAM lParam
 // 返 回 值: LRESULT
@@ -670,7 +670,7 @@ LRESULT CFunction::OnDeviceChange(WPARAM wParam, LPARAM lParam)
 //************************************************************
 // 函数名称: CopyFiles
 // 函数说明: 拷贝文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/2/14
 // 参	 数: LPCTSTR FullPath 需要遍历文件的完整路径 char* szPostFix文件后缀
 // 返 回 值: BOOL 是否成功
@@ -745,7 +745,7 @@ BOOL CFunction::CopyFiles(char* FullPath, char* szPostFix)
 //************************************************************
 // 函数名称: OnBnClickedDevicemonit
 // 函数说明: U盘监控按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -760,7 +760,7 @@ void CFunction::OnBnClickedDevicemonit()
 //************************************************************
 // 函数名称: OnBnClickedFilemonit
 // 函数说明: 文件监控按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void
@@ -776,7 +776,7 @@ void CFunction::OnBnClickedFilemonit()
 //************************************************************
 // 函数名称: CreateBat
 // 函数说明: 构造批处理文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: char * pszFileName文件名
 // 返 回 值: BOOL是否成功
@@ -819,7 +819,7 @@ BOOL CFunction::CreateBat(char * pszFileName)
 //************************************************************
 // 函数名称: DeleteSelf
 // 函数说明: 自删除
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: char * pszFileName文件名
 // 返 回 值: BOOL是否成功
@@ -872,7 +872,7 @@ BOOL CFunction::DeleteSelf()
 //************************************************************
 // 函数名称: OnBnClickedSelfdelete
 // 函数说明: 自删除按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/30
 // 参	 数: void
 // 返 回 值: void

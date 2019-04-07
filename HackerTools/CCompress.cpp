@@ -92,7 +92,7 @@ BOOL CCompress::OnInitDialog()
 //************************************************************
 // 函数名称: OnDropFiles
 // 函数说明: 响应文件拖拽消息
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/24
 // 参	 数: HDROP hDropInfo 文件句柄
 // 返 回 值: void
@@ -118,7 +118,7 @@ void CCompress::OnDropFiles(HDROP hDropInfo)
 //************************************************************
 // 函数名称: OnBnClickedDatacompress
 // 函数说明: 数据压缩按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/25
 // 参	 数: void
 // 返 回 值: void
@@ -185,7 +185,7 @@ void CCompress::OnBnClickedDatacompress()
 //************************************************************
 // 函数名称: OnBnClickedFilecompress
 // 函数说明: 文件解压缩按钮
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/25
 // 参	 数: void
 // 返 回 值: void
@@ -218,7 +218,7 @@ void CCompress::OnBnClickedFilecompress()
 		m_Tip += "将文件压缩为数据成功\r\n";
 	}
 	//保存压缩数据为文件
-	bRet = SaveToFile("CompressFile.GuiShou", pCompressData, dwCompressDataSize);
+	bRet = SaveToFile("CompressFile.kalikai", pCompressData, dwCompressDataSize);
 	if (bRet == FALSE)
 	{
 		m_Tip += "保存压缩文件失败\r\n";
@@ -230,7 +230,7 @@ void CCompress::OnBnClickedFilecompress()
 	}
 
 	//将文件解压缩为数据
-	bRet = Zlib_UnCompressData("CompressFile.GuiShou", &pUnCompressData, &dwUnCompressDataSize);
+	bRet = Zlib_UnCompressData("CompressFile.kalikai", &pUnCompressData, &dwUnCompressDataSize);
 	if (bRet == FALSE)
 	{
 		m_Tip += "将文件解压缩为数据失败\r\n";
@@ -241,7 +241,7 @@ void CCompress::OnBnClickedFilecompress()
 		m_Tip += "将文件解压缩为数据成功\r\n";
 	}
 	//保存解压缩数据为文件
-	bRet = SaveToFile("GuiShou.exe",pUnCompressData, dwUnCompressDataSize);
+	bRet = SaveToFile("kalikai.exe",pUnCompressData, dwUnCompressDataSize);
 	if (bRet == FALSE)
 	{
 		m_Tip += "保存解压缩数据为文件失败\r\n";
@@ -262,7 +262,7 @@ void CCompress::OnBnClickedFilecompress()
 //************************************************************
 // 函数名称: DataCompress
 // 函数说明: 数据压缩
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/26
 // 参	 数: BYTE*  pUncompressData 未压缩的数据 DWORD dwUncompressDataLength 未压缩的数据的数据大小
 // 参	 数: BYTE** ppCompressData  压缩后的数据 DWORD * pdwCompressDataLength 压缩后的数据大小
@@ -381,7 +381,7 @@ BOOL CCompress::DataCompress(BYTE* pUncompressData, DWORD dwUncompressDataLength
 //************************************************************
 // 函数名称: DataDeCompress
 // 函数说明: 数据解压缩
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/26
 // 参	 数: BYTE* pCompressData 压缩的数据 DWORD dwCompressDataLength 压缩的数据长度
 // 参	 数: BYTE** ppUncompressData 解压缩的数据 DWORD* pdwUncompressDataLength 解压缩的数据长度
@@ -463,7 +463,7 @@ BOOL CCompress::DataDeCompress(BYTE* pCompressData, DWORD dwCompressDataLength, 
 //************************************************************
 // 函数名称: ByteToCString
 // 函数说明: 把BYTE* 转为十六进制显示的CString
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: BYTE * str需要转换的BYTE* DWORD dwLength 长度
 //************************************************************
@@ -492,7 +492,7 @@ CString CCompress::ByteToCString(BYTE* str,DWORD dwLength)
 //************************************************************
 // 函数名称: Zlib_CompressData
 // 函数说明: 将文件压缩为数据
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: char * pszCompressFileName 需要压缩的文件完整路径
 // 参	 数: BYTE ** ppCompressData 压缩后的数据
@@ -597,7 +597,7 @@ BOOL CCompress::Zlib_CompressData(char* pszCompressFileName, BYTE** ppCompressDa
 //************************************************************
 // 函数名称: SaveToFile
 // 函数说明: 将数据保存为文件
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: char * pszFileName 文件名
 // 参	 数: BYTE * pData 数据
@@ -631,7 +631,7 @@ BOOL CCompress::SaveToFile(char * pszFileName, BYTE * pData, DWORD dwDataSize)
 //************************************************************
 // 函数名称: Zlib_UnCompressData
 // 函数说明: 将文件解压缩为数据
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/27
 // 参	 数: char * pszUncompressFileName 需要解压缩的文件名
 // 参	 数: BYTE ** ppUnCompressData 解压缩后的数据

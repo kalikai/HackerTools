@@ -11,7 +11,7 @@
 #define IDD_USER                        131
 #define IDD_CORE                        133
 #define IDD_Base                        136
-#define IDR_GUISHOU2                    139
+#define IDR_kalikai2                    139
 #define IDD_Inject                      141
 #define IDD_Start                       143
 #define IDD_SelfStart                   145
@@ -20,7 +20,7 @@
 #define IDD_Compress                    151
 #define IDD_Encrypt                     153
 #define IDD_Help                        155
-#define IDR_GUISHOU1                    157
+#define IDR_kalikai1                    157
 #define IDD_Function                    158
 #define IDD_EnumProcess                 160
 #define IDD_EnumFiles                   162

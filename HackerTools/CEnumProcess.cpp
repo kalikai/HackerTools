@@ -56,7 +56,7 @@ BOOL CEnumProcess::OnInitDialog()
 //************************************************************
 // 函数名称: EnumProcess
 // 函数说明: 进程遍历
-// 作	 者: GuiShou
+// 作	 者: kalikai
 // 时	 间: 2019/1/29
 // 参	 数: void
 // 返 回 值: BOOL 是否成功

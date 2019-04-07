@@ -9,7 +9,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-		::MessageBoxA(NULL, "DLL劫持成功", "GuiShou", MB_OK | MB_ICONWARNING);
+		::MessageBoxA(NULL, "DLL劫持成功", "kalikai", MB_OK | MB_ICONWARNING);
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:
