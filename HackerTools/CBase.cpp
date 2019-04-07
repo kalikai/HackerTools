@@ -64,6 +64,14 @@ void CBase::OnBnClickedRunsingle()
 //************************************************************
 void CBase::OnBnClickedReleaseres()
 {
+	/*在VC环境中除了我们所常用的Dialog、Menu和Bitmap等标准资源类型之外，它还支持自定义资源类型.那自定义资源能做什么呢？
+	  1.默认的皮肤压缩包或语言包。一些支持换肤的软件特别是一些媒体播放器常常有自定义的皮肤文件
+	   （你可以尝试将Media Player或千千静听等软件的Skins目录下的文件的扩展名改为.zip，然后使用WinZip打开看一下），
+	    但为了防止Skin文件丢失导致软件无 法显示，他们常常会在EXE文件中内置一套Skin作为默认的皮肤文件。
+	    同样，一些支持多语言的EXE文件中存在默认语言包也是这个道理（当然也可以使用 "String Table"资源类型）；
+	  2.做为一些病毒 / 木马程序的寄生方式。如果不小心执行了带有病毒 / 木马的程序，它们会在你运行时释放出病毒 / 木马文件。当然许多病毒是将自身写入PE文件头来实现；
+	  3.合并EXE与它所需要的DLL文件。出于某些原因程序作者有时可能需要将DLL文件嵌入到可执行的EXE文件中，这可以通过使用自定义资源来实现；
+	  4.其它需要在程序中播放一个AVI动画等等，都可以通过将二进制的数据文件作为自定义资源加入到可执行文件中来实现；*/
 	//获取指定模块的资源
 	HRSRC hRsrc1 = FindResource(NULL, MAKEINTRESOURCE(IDR_kalikai1), TEXT("kalikai"));
 	HRSRC hRsrc2 = FindResource(NULL, MAKEINTRESOURCE(IDR_kalikai2), TEXT("kalikai"));
