@@ -133,7 +133,7 @@ BOOL CHackerToolsDlg::OnInitDialog()
 	{
 		if (GetLastError() == ERROR_ALREADY_EXISTS)
 		{
-			MessageBox(L"请勿双开本程序 即将退出");
+			MessageBox(L"请勿双开本程序! 即将退出!");
 			ExitProcess(-1);
 		}
 	}

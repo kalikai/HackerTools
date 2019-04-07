@@ -337,7 +337,7 @@ BOOL CHide::ReplaceProcess(const wchar_t * pszFilePath, PVOID pReplaceData, DWOR
 	}
 
 	//修改进程的PE文件的入口地址以及映像大小，先获取原来进程PE结构的加载基址
-	threadContext.Eip = (DWORD)lpDestBaseAddr + dwRunOffset;
+	threadContext.Rip = (DWORD)lpDestBaseAddr + dwRunOffset;
 
 	//设置挂起进程的线程上下文
 	bRet = SetThreadContext(pi.hThread, &threadContext);
