@@ -120,7 +120,7 @@ void CBase::OnBnClickedReleaseres()
 	fopen_s(&fp2, "TestDll.dll", "wb+");
 	if (fp1&&fp2)
 	{
-		m_Edit += L"资源载入本地成功\r\n";
+		m_Edit += L"资源载入本地成功!\r\n";
 	}
 	fwrite(lpVoid1,sizeof(char),dwSize1,fp1);
 	fwrite(lpVoid2,sizeof(char),dwSize2,fp2);
