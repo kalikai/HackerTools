@@ -40,4 +40,5 @@ public:
 	BOOL GetAllTidByPid(DWORD dwProcessId,DWORD** ppThreadId,DWORD* pdwThreadIdLength);	//根据进程ID获取所有的线程ID
 
 	CEdit m_objEdit;
+	
 };
