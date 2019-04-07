@@ -130,11 +130,12 @@ BOOL CHackerToolsDlg::OnInitDialog()
 	//开启防双开
 	//************************************************************
 	// 函数名称: CreateMutexA
-	// 函数说明: 创建互斥体
+	// 函数说明: 创建互斥体 调用的时候会检查当前线程的id是不是 　　
+	//			 与互斥对象中保存的id一致，若一致，则此次操作有效，不一致，则无效。
 	// 作	 者: kalikai
 	// 时	 间: 2018/12/18
-	// 参	 数: void
-	// 返 回 值: void
+	// 参	 数: NULL, FALSE, "kalikaikai"
+	// 返 回 值: HANDLE
 	//************************************************************
 	HANDLE hMutex = CreateMutexA(NULL, FALSE, "kalikaikai");
 	if (hMutex)
