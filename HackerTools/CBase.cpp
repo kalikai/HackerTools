@@ -82,7 +82,7 @@ void CBase::OnBnClickedReleaseres()
 	DWORD dwSize2 = SizeofResource(NULL, hRsrc2);
 	if (dwSize1&&dwSize2)
 	{
-		m_Edit += L"获取资源大小成功\r\n";
+		m_Edit += L"获取资源大小成功!\r\n";
 	}
 	else
 	{
