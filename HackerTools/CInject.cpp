@@ -435,7 +435,7 @@ BOOL CInject::ZwCreateThreadExInjectDll(DWORD dwProcessId, char* pszDllFileName)
 	{
 		m_TipMsg += L"加载ZwCreateThreadEx函数地址成功\r\n";
 	}
-	//使用ZwCreateThreadEx函数创建远程线程 实现DLL注入
+	//使用ZwCreateThreadEx函数创建远程线程 实现DLL注入 此处是关键,把DLL的代码信息注入进程后,进程会执行DLL中的代码
 	dwStatus = ZwCreateThreadEx(&hRemoteThread, THREAD_ALL_ACCESS, NULL,
 	hProcess, (LPTHREAD_START_ROUTINE)pFunProcAddr, pDllAddr, 0, 0, 0, 0, NULL);
 	if (hRemoteThread==NULL)

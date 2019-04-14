@@ -1,5 +1,1 @@
-﻿  CDia_User.cpp
-  CInject.cpp
-D:\Projects\HackerTools\HackerTools\CInject.cpp(508): warning C4267: “初始化”: 从“size_t”转换到“DWORD”，可能丢失数据
-  正在生成代码...
-  HackerTools.vcxproj -> D:\Projects\HackerTools\x64\Debug\HackerTools.exe
+﻿  HackerTools.vcxproj -> D:\Projects\HackerTools\x64\Debug\HackerTools.exe
