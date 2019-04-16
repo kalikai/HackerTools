@@ -91,6 +91,7 @@ void CStrat::OnBnClickedCreateprocess()
 
 
 	BOOL bRet = FALSE;
+	//三种启动方式不错，点赞
 	//以WinExec的方式启动进程
 	USES_CONVERSION;
 	bRet = WinExecStart(W2A(m_Path), SW_SHOWNORMAL);

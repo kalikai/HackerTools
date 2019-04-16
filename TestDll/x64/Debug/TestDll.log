@@ -1,2 +1,6 @@
-﻿  dllmain.cpp
+﻿  CBypassUAC.cpp
+  dllmain.cpp
+  TestDll.cpp
+  正在生成代码...
+    正在创建库 D:\Projects\HackerTools\x64\Debug\TestDll.lib 和对象 D:\Projects\HackerTools\x64\Debug\TestDll.exp
   TestDll.vcxproj -> D:\Projects\HackerTools\x64\Debug\TestDll.dll
