@@ -1,1 +1,6 @@
-﻿
+﻿  stdafx.cpp
+  DllHijackTest.cpp
+  dllmain.cpp
+  正在生成代码...
+    正在创建库 D:\Projects\HackerTools\x64\Debug\DllHijackTest.lib 和对象 D:\Projects\HackerTools\x64\Debug\DllHijackTest.exp
+  DllHijackTest.vcxproj -> D:\Projects\HackerTools\x64\Debug\DllHijackTest.dll

