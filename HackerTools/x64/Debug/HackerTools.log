@@ -1,4 +1,3 @@
-﻿  CHide.cpp
-D:\Projects\HackerTools\HackerTools\CHide.cpp(341): warning C4311: “类型强制转换”: 从“LPVOID”到“DWORD”的指针截断
-D:\Projects\HackerTools\HackerTools\CHide.cpp(341): warning C4302: “类型强制转换”: 从“LPVOID”到“DWORD”截断
+﻿  CSelfStart.cpp
+D:\Projects\HackerTools\HackerTools\CSelfStart.cpp(389): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
   HackerTools.vcxproj -> D:\Projects\HackerTools\x64\Debug\HackerTools.exe

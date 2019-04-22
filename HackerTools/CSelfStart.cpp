@@ -192,6 +192,7 @@ void CSelfStart::OnBnClickedTask()
 	//创建计划任务
 	CMyTaskSchedule task;
 	USES_CONVERSION;
+	//搜索任务计划程序。把任务删除
 	bRet = task.NewTask("kalikai", W2A(m_Path), "", "kalikai");
 	if (FALSE == bRet)
 	{
@@ -229,6 +230,7 @@ void CSelfStart::OnBnClickedService()
 	m_Tips = "";
 
 	//创建服务
+	//计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Repwn.exe
 	USES_CONVERSION;
 	BOOL bRet = SystemServiceOperate(W2A(m_Path), Load_Service);
 	if (bRet==FALSE)
