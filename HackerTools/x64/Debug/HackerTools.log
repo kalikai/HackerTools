@@ -1,3 +1,2 @@
-﻿  CSelfStart.cpp
-D:\Projects\HackerTools\HackerTools\CSelfStart.cpp(389): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+﻿  CFunction.cpp
   HackerTools.vcxproj -> D:\Projects\HackerTools\x64\Debug\HackerTools.exe

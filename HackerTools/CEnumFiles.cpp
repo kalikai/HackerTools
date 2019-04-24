@@ -310,6 +310,7 @@ void CEnumFiles::OnNMRClickList2(NMHDR *pNMHDR, LRESULT *pResult)
 //************************************************************
 void CEnumFiles::OnPopFileAttr()
 {
+	//多窗口逻辑,创建一个新类,新类中写有对话框函数。
 	//获取选中的行号
 	int i = m_ListCtrl.GetSelectionMark();
 	//根据选中的行号获取对应的文件名
